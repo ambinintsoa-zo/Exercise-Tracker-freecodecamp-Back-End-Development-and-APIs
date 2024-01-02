@@ -1,59 +1,67 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
-
 body {
-  font-family:sans-serif;
-  margin: 25px;
-  color: #222;
-  background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #222;
+    background-color: #f5f5f5;
 }
-
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 h1 {
-  font-weight: bold;
-  
+    text-align: center;
+    font-size: 2.5em;
 }
-
-p {
-  max-width: 900px;
-}
-
 form {
-  margin-bottom: 25px;
-  padding: 15px;
-  background-color: #87D37C;
-  display: inline-block;
-  width: 100%;
-  max-width: 340px;
-  border-radius: 5px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: none;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+input, textarea, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="submit"], button {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+input[type="submit"]:hover, button:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
 }
 
-input {
-  display: block;
-  margin-bottom: 10px;
-  padding: 5px;
-  width: 100%;
-  border: 1px solid lightgrey;
-  border-radius: 3px;
-  font-size: 16px;
+.form-container {
+    margin-bottom: 20px;
 }
 
-input[type=submit] {
-  font-size: 16px;
-  border-radius: 3px;
-  background-color: #E4F1FE;
-  border: 1px solid grey;
-  box-shadow: 2px 2px #999;
-  cursor: pointer;
-}
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-input[type=submit]:hover {
-  background-color: #FFFEC4;
-}
-
-code {
-  font-family: monospace;
-  font-size: 1.2em;
-  background-color: #FFFEC4;
-  padding: 2px;
+    .form-container {
+        width: 50%; /* Adjust the width as needed */
+    }
 }
